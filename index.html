@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="mainContainer">
+      <h1>
+        Generate a <span><br />random password</span>
+      </h1>
+      <h2>Never use an insecure password again.</h2>
+
+      <div id="buttonsdiv">
+        <button id="genButton">Generate Passwords</button>
+        <div id="checkboxes">
+          <div id="checkbox1">
+            <label for="symbolscheck" id="label1">Include Symbols?</label
+            ><input type="checkbox" name="symbols" id="symbolscheck" />
+          </div>
+
+          <div id="checkbox2">
+            <label for="numberscheck" id="label2">Include Numbers?</label
+            ><input type="checkbox" name="numbers" id="numberscheck" />
+          </div>
+        </div>
+      </div>
+
+      <div id="break"></div>
+
+      <div id="passContainer">
+        <div id="pass1" class="passdiv"></div>
+        <div id="pass2" class="passdiv"></div>
+      </div>
+      <div id="darkModeContainer">
+        <input type="checkbox" id="darkmodetoggle" />
+        <label for="darkmodetoggle" class="labeldark"></label>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

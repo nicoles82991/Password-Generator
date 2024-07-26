@@ -1,0 +1,185 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  color: white;
+  font-family: inter, Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+body.lightmode {
+  color: black;
+}
+
+#mainContainer {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  width: 450px;
+  height: 350px;
+  background-color: #1f2937;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+#mainContainer.lightmode {
+  background-color: #f4f3f9;
+}
+
+h1 {
+  padding-top: 40px;
+  margin-right: 60px;
+  margin-bottom: 10px;
+  line-height: 34px;
+}
+
+h2 {
+  color: #d5d4d8;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+h2.lightmode {
+  color: rgb(45, 45, 45);
+}
+
+span {
+  color: #10b981;
+}
+
+span.lightmode {
+  color: #de5815;
+}
+
+button {
+  background-color: #10b981;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+button.lightmode {
+  background-color: #de5815;
+}
+
+button:hover {
+  background-color: #3abe92;
+}
+
+button:hover.lightmode {
+  background-color: #ea7e48;
+}
+
+#buttonsdiv {
+  display: flex;
+  margin-top: 30px;
+  margin-left: 0px;
+}
+
+#label1,
+#label2 {
+  margin-left: 50px;
+  margin-right: 5px;
+  font-size: 14px;
+  color: #d5d4d8;
+  cursor: pointer;
+}
+
+#label1.lightmode,
+#label2.lightmode {
+  color: rgb(45, 45, 45);
+}
+
+#symbolscheck,
+#numberscheck {
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.passdiv {
+  background-color: #273549;
+  width: 180px;
+  border-radius: 10px;
+  padding: 8px 20px;
+  color: #39ecb0;
+  margin-right: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.passdiv.lightmode {
+  color: #de5815;
+  background-color: #d8d7db;
+}
+
+.passdiv:hover {
+  background-color: #2f3d50;
+}
+
+.passdiv:hover.lightmode {
+  background-color: #e4e3e7;
+}
+
+#break {
+  width: 100%;
+  border: 1px solid #2b3849;
+  margin-top: 30px;
+  border-radius: 2px;
+}
+
+#break.lightmode {
+  border: 1px solid white;
+}
+
+#passContainer {
+  margin-top: 30px;
+  display: flex;
+}
+
+#darkModeContainer {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.labeldark {
+  display: inline-block;
+  border-radius: 20px;
+  width: 55px;
+  height: 30px;
+  background-color: #2f3f55;
+  cursor: pointer;
+  position: relative;
+}
+
+.labeldark::before {
+  position: absolute;
+  content: "";
+  background-color: #758dad;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  top: 2px;
+  transition: 0.2s;
+}
+
+#darkmodetoggle:checked + .labeldark {
+  background-color: #bcbbc1;
+}
+
+#darkmodetoggle:checked + .labeldark::before {
+  background-color: white;
+  transform: translateX(-25px);
+}
+
+input#darkmodetoggle {
+  display: none;
+}
